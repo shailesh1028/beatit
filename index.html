@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wildfire 2018</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="loader.css">
+	<link rel="stylesheet" href="slideshow.css">
+	<script src="index.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Bilbo|Courgette|Economica|Marvel" rel="stylesheet">
+
+</head>
+<body >
+	<div id="loader-body">
+		<div class="loader">
+		  	WILD WEST
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		</div>
+	</div>
+	
+	<ul class="slideshow">
+	  <li><span>Image 01</span></li>
+	  <li><span>Image 02</span></li>
+	  <li><span>Image 03</span></li>
+	  <li><span>Image 04</span></li>
+	  <li><span>Image 05</span></li>
+	  <li><span>Image 06</span></li>
+	</ul>
+	
+	<div id="line-right"></div>
+	<div id="line-left"></div>
+	<div id="line-top"></div>
+	<div id="line-bottom"></div>
+	
+
+	<div id="body-content">
+		<div id="body-main" class="animated zoomIn" onscroll="visible()">
+			<div id="main-logo">
+			<a href="https://2019.beta.springfest.in/" style="float: right;"><img class="logo" src="sf-logo.png"></a>
+			<a href="http://www.iitkgp.ac.in/" style="float: left;"><img class="logo" src="kgp-logo.png"></a>
+			</div>
+			<h2 class="animated fadeIn delay-3s" id="main-sf">Spring Fest 2019 </h2> <br>
+			<h4 class="animated fadeIn delay-3s" id="main-presents"> Presents </h4><br>
+			<h1 class="animated zoomIn delay-3s" id="main-wildfire"> WILDFIRE </h1>
+			<div id="scroll" onclick="visible()">
+				<img src="scroll.png" height="20px" width="20px">
+			</div>
+			<h1 id="main-dum"> a</h1>
+		</div>
+
+		<div id="body-area">
+			<ul id="list-logo">
+				<a href="https://2019.beta.springfest.in/" class="li-logo"><img class="logo" src="sf-logo.png"></a>
+				<a href="http://www.iitkgp.ac.in/" class="li-logo"><img class="logo" src="kgp-logo.png"></a>
+			</ul>
+			<div id="menu-list">
+			<ul>
+				<li class="list-items"><a class="list-items-a" href="#about"> ABOUT    </a></li>
+				<li class="list-items"><a class="list-items-a" href="#rules"> RULES    </a></li>
+				<li class="list-items"><a class="list-items-a" href="#register"> REGISTER </a></li>
+			</ul>
+			</div>
+
+			<div id="body-sum">
+			<div id="about" >
+				<h2 id="head-about">About</h2>
+				<p id="p-about">
+				Wildfire is India's oldest and the most prestigious rock band competition which turned international last year.
+				With prizes worth lakhs of rupees and your prestige at stake, Wildfire has been the launch pad for many
+				contemporary bands including -Underground Authority, Parikrama, Kryptos, Zygnema, Cassini's Division and
+				many more. So be ready to fulfill your love for rock at the Wildfire Finals at Kharagpur!
+				Wildfire is a western rock band competition, open to any college or semi-professional band from India and
+				abroad.</p>
+			</div>
+
+			<div id="rules">
+				<h2 id="head-rules">Rules</h2>
+				<p id="p-rules">
+				1. Offline prelims will be conducted in Bangalore, Delhi, Mumbai, Kolkata, Guwahati and Kathmandu.
+				Online prelims will also be conducted wherein participating bands can register.<br>
+				2. After the first round, a shortlist of bands would be released who will qualify to perform at the main
+				event at IIT Kharagpur.<br>
+				3. The main event at IIT Kharagpur would consist of 2 rounds: prefinals and finals.<br>
+				4. In prefinals at IIT Kharagpur, a group will be required to perform at least three numbers of their choice
+				within 20 minutes. (Amps on to amps off and inclusive of sound check)<br>
+				5. In finals, a group will be required to perform at least 4 numbers of their choice within 40 minutes (Amps
+				on to amps off inclusive of sound check).<br>
+				6. Bands will be disqualified on the spot for misconduct, obscenity or foul language, and will be banned
+				from performing at all subsequent editions of spring fest.<br>
+				7. Equipment provided will be:<br>
+				• One bass amplifier speaker<br>
+				• One lead amplifier speaker<br>
+				• Adequate microphones<br>
+				• Drum set (Participants can bring along with your own cymbals and chokes/high hats).<br>
+				8. Bands will have to bring their own musical instruments and special effects. However, programmed
+				music is not allowed.<br>
+				9. Spring Fest will not be held responsible for the failure of any instrument.<br>
+				The decision of the judges will be final and binding. The organizing committee reserves the right to make
+				any last-minute change in the rules.<br>
+				</p>
+			</div>
+
+			<div id="register">
+				<h2 id="head-reg">Register</h2>
+				<div id="reg-form">
+				<form id="" action="index.php" method="post" target="_self">
+					<input type="text"   class="form-items" name="name" placeholder="Name"  required> <br>
+					<input type="text"   class="form-items" name="grp-name" placeholder="Group-name"  required> <br>
+					<input type="number" class="form-items" name="mobile" onchange="msg(this.value)"    placeholder="Mobile No." required> <br>
+					<input type="email"  class="form-items" name="email"    placeholder="Email" required> <br>
+					<input type="text"   class="form-items" name="insti"    placeholder="Name of Institution" required> <br>
+					<select name="size" class="form-items" onchange="show_member(this.value)" required>
+						<option value="null" selected>--Team Size--</option>
+					  	<option value="1">1</option>
+					  	<option value="2">2</option>
+					  	<option value="3">3</option>
+					  	<option value="4">4</option>
+					  	<option value="5">5</option>
+					  	<option value="6">6</option>
+					  	<option value="7">7</option>
+					</select> <br>
+					<input type="text" class="form-items" name="city"     placeholder="City"  required> <br>
+					<input type="url" class="form-items" name="url" placeholder="Url Of the Video"> <br>
+					<div id="mem_size"></div>
+					<input type="submit" id="reg-submit" name="" value="Submit">
+				</form>
+				</div>
+			</div>
+
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
