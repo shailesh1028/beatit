@@ -1,12 +1,10 @@
-<<?php 
+<?php 
 	require 'connect.php';
 	$name=$_POST['name'];
-	$grpname=$_POST['grp-name'];
 	$mobile=$_POST['mobile'];  
 	$email=$_POST['email'];
 	$insti=$_POST['insti'];
 	$size=$_POST['size'];
-	$city=$_POST['city'];
 	$url=$_POST['url'];
 	$n=$size;
 	$member2=null;

@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Wildfire 2018</title>
+	<title>Beat It | Spring Fest 2019</title>
+	<link rel="icon" href="./sf-logo.png"/>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -14,15 +16,7 @@
 
 </head>
 <body >
-	<div id="loader-body">
-		<div class="loader">
-		  	WILD WEST
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		</div>
-	</div>
+	
 	
 	<ul class="slideshow">
 	  <li><span>Image 01</span></li>
@@ -47,7 +41,14 @@
 			</div>
 			<h2 class="animated fadeIn delay-3s" id="main-sf">Spring Fest 2019 </h2> <br>
 			<h4 class="animated fadeIn delay-3s" id="main-presents"> Presents </h4><br>
-			<h1 class="animated zoomIn delay-3s" id="main-wildfire"> WILDFIRE </h1>
+			<div class="animated zoomIn delay-3s" id="main-head" >
+			    <span class="main-beat">B</span>
+			  	<span class="main-beat beat-w">E</span>
+			  	<span class="main-beat">A</span>
+			  	<span class="main-beat beat-pad">T</span>
+			  	<span class="main-beat">I</span>			  	
+			  	<span class="main-beat beat-w">T</span>
+			</div>
 			<div id="scroll" onclick="visible()">
 				<img src="scroll.png" height="20px" width="20px">
 			</div>
@@ -60,7 +61,7 @@
 				<a href="http://www.iitkgp.ac.in/" class="li-logo"><img class="logo" src="kgp-logo.png"></a>
 			</ul>
 			<div id="menu-list">
-			<ul>
+			<ul style="transform: translateX(-15%)">
 				<li class="list-items"><a class="list-items-a" href="#about"> ABOUT    </a></li>
 				<li class="list-items"><a class="list-items-a" href="#rules"> RULES    </a></li>
 				<li class="list-items"><a class="list-items-a" href="#register"> REGISTER </a></li>
@@ -74,61 +75,63 @@
 				Wildfire is India's oldest and the most prestigious rock band competition which turned international last year.
 				With prizes worth lakhs of rupees and your prestige at stake, Wildfire has been the launch pad for many
 				contemporary bands including -Underground Authority, Parikrama, Kryptos, Zygnema, Cassini's Division and
-				many more. So be ready to fulfill your love for rock at the Wildfire Finals at Kharagpur!
+				many more.<br>
+				So be ready to fulfill your love for rock at the Wildfire Finals at Kharagpur!,
 				Wildfire is a western rock band competition, open to any college or semi-professional band from India and
 				abroad.</p>
 			</div>
 
 			<div id="rules">
-				<h2 id="head-rules">Rules</h2>
-				<p id="p-rules">
-				1. Offline prelims will be conducted in Bangalore, Delhi, Mumbai, Kolkata, Guwahati and Kathmandu.
-				Online prelims will also be conducted wherein participating bands can register.<br>
-				2. After the first round, a shortlist of bands would be released who will qualify to perform at the main
-				event at IIT Kharagpur.<br>
-				3. The main event at IIT Kharagpur would consist of 2 rounds: prefinals and finals.<br>
-				4. In prefinals at IIT Kharagpur, a group will be required to perform at least three numbers of their choice
-				within 20 minutes. (Amps on to amps off and inclusive of sound check)<br>
-				5. In finals, a group will be required to perform at least 4 numbers of their choice within 40 minutes (Amps
-				on to amps off inclusive of sound check).<br>
-				6. Bands will be disqualified on the spot for misconduct, obscenity or foul language, and will be banned
-				from performing at all subsequent editions of spring fest.<br>
-				7. Equipment provided will be:<br>
-				• One bass amplifier speaker<br>
-				• One lead amplifier speaker<br>
-				• Adequate microphones<br>
-				• Drum set (Participants can bring along with your own cymbals and chokes/high hats).<br>
-				8. Bands will have to bring their own musical instruments and special effects. However, programmed
-				music is not allowed.<br>
-				9. Spring Fest will not be held responsible for the failure of any instrument.<br>
-				The decision of the judges will be final and binding. The organizing committee reserves the right to make
-				any last-minute change in the rules.<br>
+				<h2 class="head-rules">Rules</h2>
+				<p class="p-rules">
+					1. The competition will be in two parts- Prelims and Finals.<br>
+					2. Prelims will be held online wherein top 16 will be selected and called up for finals in Kharagpur during the fest.<br>
+					3. In case a participant is not able to attend, the next participant will be approached or finally on spot registrations will be done in case the 
+					   minimum number of participants is not reached.<br>
+					4. Decision of the judges will be final and binding. No changes will be made once the judges have announced the results.<br>
+					5. No foul language is allowed. Participant may receive a penalty or not allowed to compete whichever is deemed fit by the organizing committe.<br>
+				</p>
+
+				<h2 class="head-rules">Prelims </h2>
+				<p class="p-rules">
+					1. The participants will be required to send a YouTube video of not more than 1.5 minutes performing their piece and submit it in the portal to 
+					   be released on the FB Page.<br>
+					2. No musical instruments will be allowed. In case it is found, the participant will be disqualified.<br>
+				</p>
+
+				<h2 class="head-rules">Finals</h2>
+				<p class="p-rules">
+					1. This will be a 1vs1 battle rounds among the top 16 participants wherein each beatboxer would be given 2 minutes each and the winners will be
+					   decided by the judges.<br>
+					2. The winner from each battle will be promoted to the next battle and the opponents will be decided by the judges whichever way they seem fit.<br>
+					3. No musical instruments will be allowed. In case it is found, the participant will be disqualified.<br>
+					4. In case judges are not able to decide, another 30 seconds will be provided to each participant to perform. It will be avoided whenever 
+					   possible.<br>
 				</p>
 			</div>
 
 			<div id="register">
 				<h2 id="head-reg">Register</h2>
 				<div id="reg-form">
-				<form id="" action="index.php" method="post" target="_self">
-					<input type="text"   class="form-items" name="name" placeholder="Name"  required> <br>
-					<input type="text"   class="form-items" name="grp-name" placeholder="Group-name"  required> <br>
-					<input type="number" class="form-items" name="mobile" onchange="msg(this.value)"    placeholder="Mobile No." required> <br>
-					<input type="email"  class="form-items" name="email"    placeholder="Email" required> <br>
-					<input type="text"   class="form-items" name="insti"    placeholder="Name of Institution" required> <br>
-					<select name="size" class="form-items" onchange="show_member(this.value)" required>
-						<option value="null" selected>--Team Size--</option>
-					  	<option value="1">1</option>
-					  	<option value="2">2</option>
-					  	<option value="3">3</option>
-					  	<option value="4">4</option>
-					  	<option value="5">5</option>
-					  	<option value="6">6</option>
-					  	<option value="7">7</option>
+
+				<form>
+					<input type="text"  id="name" class="form-items" name="name" placeholder="Name"  required> <br>
+					<input type="number" id="mobile" class="form-items" name="mobile" onchange="msg(this.value)"    placeholder="Mobile No." required> <br>
+					<input type="email"  id="email" class="form-items" name="email"    placeholder="Email" required> <br>
+					<input type="text"  id="insti" class="form-items" name="insti"    placeholder="Name of Institution" required> <br>
+					<select name="yop" id="yop" class="form-items" required>
+						<option value="null" selected>--Year Of Passing--</option>
+					  	<option value="2019">2019</option>
+					  	<option value="2020">2020</option>
+					  	<option value="2021">2021</option>
+					  	<option value="2022">2022</option>
+					  	<option value="2023">2023</option>
 					</select> <br>
-					<input type="text" class="form-items" name="city"     placeholder="City"  required> <br>
-					<input type="url" class="form-items" name="url" placeholder="Url Of the Video"> <br>
-					<div id="mem_size"></div>
+
+					<input type="url" id="url" class="form-items" name="url" placeholder="Link Of the Video"> <br>
+
 					<input type="submit" id="reg-submit" name="" value="Submit">
+					<p id="success_msg"></p>
 				</form>
 				</div>
 			</div>
