@@ -146,43 +146,24 @@ body{
         }
         #main-head{
             position:relative;
+            font-size: 80px;
             width: 100%;
             text-align: center;
-            bottom: 20%;
-            /*font-family: 'Economica', sans-serif;
-            line-height: 100px;
-            letter-spacing: 10px;
-            text-shadow:0 0 20px rgb(244, 211, 2);*/
-        }
-        /*@keyframes wild{
-            0% {color: white;}
-            100% {text-shadow: 3px 2px 60px rgb(244, 2, 2); color:white;}
-            /*100% {color: white;}
-        }*/
-        .main-beat{
-            position:relative;
-            font-size: 80px;
+            bottom: 26%;
             font-family: 'Economica', sans-serif;
             line-height: 100px;
-            letter-spacing: 20px;
-            text-align: center;
-            width: 100%;
+            letter-spacing: 10px;
+            animation-name: wild 2s infinite linear;
+            text-shadow:0 0 20px rgb(244, 211, 2);
         }
-        .beat-w{
-            border: 1px solid;
-            border-radius: 10px;
-            background-color: white;
-            color: black;
-            text-align: center;
-            width: 100%;
-        }
-        .beat-pad{
-            margin-right: 5%;
-            text-align: center;
+        @keyframes wild{
+            0% {color: white;}
+            100% {text-shadow: 3px 2px 60px rgb(244, 2, 2); color:white;}
+            /*100% {color: white;}*/
         }
         #scroll{
             position: relative;
-            top: 20%;
+            bottom:10%;
             width: 100%;
             text-align : center;
             animation-name: move;
@@ -399,7 +380,7 @@ body{
             font-family: 'Marvel', sans-serif;
             font-size: 28px;
         }
-        #main-wildfire{
+        #main-head{
             position:relative;
             bottom: 8%;
             font-size: 45px;
@@ -523,14 +504,14 @@ body{
             box-sizing: border-box;
             border-radius: 10px;
         }
-        #head-rules{
+        .head-rules{
             position:relative;
             top:0%;
             top:0%;
             width: 100%;
             font-family: 'Courgette', cursive;
         }
-        #p-rules{
+        .p-rules{
             position:relative;
             top: 8%;
             padding: 10px;
