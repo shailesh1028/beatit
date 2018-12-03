@@ -91,7 +91,7 @@ var num = 0;
 			}*/
 			if (num == 0) {
 				$.ajax({
-					url: "https://script.google.com/macros/s/AKfycbz4ggyhtL57l7Ssm2mKwIWhTTadqgkfltpMj02g2Uq_BR4CxmY/exec",
+					url: "",
 					type: "POST",
 					data:{
 					   'Name':name,
