@@ -1,5 +1,8 @@
 var num = 0;
 	$(document).ready(function(){
+		$('.loader').fadeOut(3000,function(){
+			$('.main-body').css('display','block');
+		});
 		$('#loader-body').css('display','none');
 			$("form").submit(function(e){
 				e.preventDefault();

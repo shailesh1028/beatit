@@ -16,7 +16,7 @@ ul {
 
 .cb-slideshow:after {
   content: "";
-  background: transparent url(https://i.imgur.com/a0MnlKx.png) repeat top left;
+  background: transparent url("") repeat top left;
 }
 .cb-slideshow li span {
   width: 100%;
