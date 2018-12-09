@@ -101,7 +101,7 @@ var num = 0;
 					   'Mobile':mobile,
 					   'Email':email,
 					   'Institution':insti,
-					   'Year_of_passing':n,
+					   'Year of passing':n,
 					   'url':url,
 					},
 					  success:function(){
