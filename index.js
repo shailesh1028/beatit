@@ -94,8 +94,8 @@ var num = 0;
 			}*/
 			if (num == 0) {
 				$.ajax({
-					url: "",
-					type: "POST",
+					url: "https://script.google.com/macros/s/AKfycbwN3FLDgSR8gSjVKCMEsPQ07qDCB4gJSoI3M0I7nZalhdJNDKM/exec",
+					type: "GET",
 					data:{
 					   'Name':name,
 					   'Mobile':mobile,
